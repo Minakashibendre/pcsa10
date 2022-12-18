@@ -1,2 +1,17 @@
 System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+ChromeDriver driver= new ChromeDriver();
+	      driver.get("https://demo.actitime.com/login.do");
+	      String actualTitle =("actiTIME - Login");
+	      String element = driver.getTitle();
+	      System.out.println(element);
+	      
+	      if(element.equals( actualTitle))
+	      {
+	    	  System.out.println("True: Title is same");
+	      }
+	      else
+	      {
+	    	  System.out.println("False: Title is not same");
+	      }
+	}
 		
