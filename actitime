@@ -1,6 +1,2 @@
 System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.get("https://letcode.in/alert");
-		driver.findElement(By.id("accept")).click();    // alert popup is getting
-		driver.switchTo().alert().accept();
